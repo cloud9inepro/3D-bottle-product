@@ -7,7 +7,7 @@ export default function BottleScene() {
   const isMobile = useIsMobile()
 
   return (
-    <div className="w-full h-[50vh] lg:h-full bg-[#F3F3F4]">
+    <div className="w-full h-[50vh] lg:h-full bg-[#FFF3F4] rounded-3xl overflow-hidden">
       <Canvas
         camera={{ position: [0, 0, 4], fov: 45 }}
         gl={{ antialias: true }}

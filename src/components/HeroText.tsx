@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion'
+import { FaRegSnowflake, FaFire } from "react-icons/fa";
+
+
 
 export default function HeroText() {
   return (
@@ -22,7 +25,7 @@ export default function HeroText() {
 
 <div className="flex gap-4 mt-8">
   <div className="bg-[#F3F3F4] rounded-2xl px-6 py-4 flex items-center gap-3 shadow-sm">
-    <span className="text-2xl">❄️</span>
+    <span className="text-2xl text-blue-600"><FaRegSnowflake /></span>
     <div>
       <p className="font-bold text-sm md:text-lg">72 Hours</p>
       <p className="text-gray-400 text-sm">Cold Retention</p>
@@ -30,7 +33,7 @@ export default function HeroText() {
   </div>
 
   <div className="bg-[#F3F3F4] rounded-2xl px-6 py-4 flex items-center gap-3 shadow-sm">
-    <span className="text-2xl">🔥</span>
+    <span className="text-2xl text-red-500"><FaFire /></span>
     <div>
       <p className="font-bold text-sm md:text-lg">24 Hours</p>
       <p className="text-gray-400 text-sm">Heat Retention</p>

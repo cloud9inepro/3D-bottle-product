@@ -34,13 +34,13 @@ export default function ProductConfig() {
                 {/* right side config */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center gap-6">
                     <div>
-                        <h2 className="text-4xl font-black">Your Hydration,<br />Tailored.</h2>
+                        <h2 className="md:text-4xl md:text-block text-2xl text-center font-black">Your Hydration,<br />Tailored.</h2>
                         <p className="text-gray-500 mt-3 text-sm leading-relaxed">
                             Customize every aspect from capacity to finish. Choose from our signature matte obsidian or the refractive crystalline finish.
                         </p>
                         {/* capcity */}
                         <div>
-                            <p className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-3">Capacity</p>
+                            <p className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-3 mt-3">Capacity</p>
                             <div className="flex gap-3">
                                 {['500ml', '750ml', '1000ml'].map(size => (
                                     <button
@@ -60,7 +60,7 @@ export default function ProductConfig() {
 
                         {/* color */}
                         <div>
-                            <p className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-3">Finish</p>
+                            <p className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-3 mt-3">Finish</p>
                             <div className="flex gap-3">
                                 {COLORS.map(color => (
                                     <button
