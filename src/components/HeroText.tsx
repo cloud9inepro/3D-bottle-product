@@ -6,11 +6,12 @@ import { FaRegSnowflake, FaFire } from "react-icons/fa";
 export default function HeroText() {
   return (
    
-    <div className=" h-full flex flex-col justify-center px-12">
+    
        <motion.div
       initial={{ opacity: 0, x: -30 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6, delay: 0.5 }}
+      transition={{ duration: 0.6, delay: 0.6 }}
+      className=" h-full flex flex-col justify-center px-12"
     >
       <span className="text-xs font-semibold tracking-widest uppercase border border-gray-300 rounded-full px-4 py-1 w-fit text-gray-500">
   Engineering Excellence
@@ -41,7 +42,7 @@ export default function HeroText() {
   </div>
 </div>
 </motion.div>
-    </div>
+  
     
   )
 }

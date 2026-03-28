@@ -3,6 +3,9 @@ import HeroText  from './components/HeroText'
 import Navbar from './components/Navbar'
 import TechSpecs from './components/TechSpecs'
 import ProductConfig from './components/ProductConfig'
+import Testimonials from './components/Testimonials'
+import Footer from './components/Footer'
+import { motion } from 'framer-motion'
 
 export default function App() {
   return (
@@ -21,9 +24,14 @@ export default function App() {
         </div>
 
         {/* Right: 3D Canvas */}
-        <div className="w-full lg:w-1/2 h-[50vh] lg:min-h-screen">
-          <BottleScene />
-        </div>
+       <motion.div
+  initial={{ opacity: 0, y: -10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.5 }}
+  className="w-full lg:w-1/2 h-[50vh] lg:min-h-screen"
+>
+  <BottleScene />
+</motion.div>
 
       </section>
 
@@ -33,9 +41,16 @@ export default function App() {
         
       </section>
 
-      <section className="w-full flex items-center justify-center ">
-        <ProductConfig />
-      </section>
+          <section className="w-full flex items-center justify-center ">
+            <ProductConfig />
+            
+          </section>
+
+          <section className="w-full flex items-center justify-center ">
+            <Testimonials />
+          </section>
+
+          <Footer />
 
     </main>
   )

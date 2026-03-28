@@ -14,7 +14,7 @@ export default function ProductConfig() {
     const [activeSize, setActiveSize] = useState('500ml')
 
     return (
-        <section className="w-full px-8 py-24 bg-[#f0f2f5]">
+        <section className="w-full px-8 py-14 bg-[#f0f2f5]">
             <div
                 className="rounded-3xl p-8 flex flex-col md:flex-row gap-8 transition-colors duration-700"
                 style={{ backgroundColor: activeColor.hex + '22' }}
